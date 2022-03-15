@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ben 10</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="carregar(1,3)">
     <header>
-        <h1>Título</h1>
+        <h1 id = "title">Escolha seu alien</h1>
+        <h3 id = "msg">SEU OMNITRIX QUEBROU VOCÊ IRA VIRAR UM ALIEN ALEATÓRIO...</h3>
     </header>
     <section>
-        <div>
-            Testando...
+        <div id = "imagem">
+            <img id ="img" src="/Modulo02/images/omnitrix.png" alt="Alien 2">
         </div>
         <div>
-            
+            <input id = "butao" type="button" value="Transformar" onclick="transformar(i)">
         </div>
     </section>
     <footer>
         <p>&copy; João Oviedo</p>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
